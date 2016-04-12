@@ -2,13 +2,13 @@ module.exports = (grunt)->
   grunt.initConfig(
     pkg: grunt.file.readJSON('package.json'),
     coffee:
-      compile:
+      simditor:
         files:
           "lib/simditor-video.js":"src/simditor-video.coffee"
     sass:
         dist:
         	file:
-          		'lib/simditor.css': 'src/simditor.scss'
+          		'lib/simditor-video.css': 'src/simditor-video.scss'
           	options:
           		sourcemap: 'false'
   )
